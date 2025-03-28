@@ -1,4 +1,4 @@
-# Honey-in-Depth
+# Honey-in-Depth: Multi-Layered Deception Framework
 
 Honey-in-Depth is an advanced **multi-layered deception framework** designed to enhance security through **honeytokens**—fake assets strategically deployed across various Defense-in-Depth layers. These honeytokens deceive potential intruders and trigger alerts upon unauthorized access, helping you proactively detect threats.
 
@@ -25,10 +25,12 @@ The honeytokens are deployed in the following Defence-in-Depth layers:
 
 ## Features
 
-- **Deployment of Honeytokens**: Creates fake objects (honeytokens) across multiple layers.
-- **Real-Time Monitoring**: Continuously monitors the honeytokens for unauthorized access.
-- **Event Logging**: Logs unauthorized access events with relevant details.
-- **Cleanup**: Automatically removes all honeytokens when the monitoring is stopped.
+- **Comprehensive Deployment** – Distributes honeytokens across multiple security layers.
+- **Real-Time Monitoring** – Tracks unauthorized access attempts in real time.
+- **Intelligent Logging** – Captures critical details of intrusion events.
+- **Automated Cleanup** – Removes all honeytokens when monitoring stops, ensuring system integrity.
+- **Zero False Positives** – Achieved a 0% false positive rate in testing.
+- **Low Resource Usage** – CPU usage increase <5%, memory usage increase <1%.
 
 ## Requirements
 
@@ -73,6 +75,10 @@ sudo python3 hid.py
 
 - This command will deploy the honeytokens and start monitoring them for unauthorized access. 
 - The monitoring will run indefinitely until you stop it with `Ctrl+C`.
+- The terminal will display deployed honeytoken details including:
+  - layer name,
+  - honeytoken name
+  - honeytoken file location
 
 
 ### Simulate Unauthorized Access
@@ -89,6 +95,15 @@ bash test_hid.sh
 
 ![Screenshot 2025-03-28 152306](https://github.com/user-attachments/assets/ad31b653-65ea-48c9-8639-1d3a34d49392)
 
+- This Honey-in-Depth system successfully triggere alert all the unauthorised access an display on the terminal the honeytoken details including:
+  - time of access
+  - layer name
+  - honeytoken name
+  - honeytoken file location
+
+- Honey-in-Depth exhibited a 0% false positive rate
+- Alert latency between honeytoken interaction and notification, averaged less than 1 second in testing.
+
 ### Calculate Storage
 
 - To calculate the storage capacity of deployed honeytokens:
@@ -98,7 +113,7 @@ bash file_storage.sh
 ```
 ![Screenshot 2025-03-28 152415](https://github.com/user-attachments/assets/d4c81110-31cf-46bd-93a7-f5190a22e5e2)
 
-- This script calculates storage capacity occupied by deployed honeytokens.
+- This script calculates storage occupied by deployed honeytokens.
 
 ### Calculate CPU and Memory Usage
 - To calculate the CPU and Memory usage when honey-in-depth is running:
@@ -108,7 +123,9 @@ bash cpu_mem_usage.sh
 ```
 ![Screenshot 2025-03-28 152604](https://github.com/user-attachments/assets/1ef1a6ac-225e-4298-ae4a-beb69d7e80c7)
 
-- This script evaluates system performance while Honey-in-Depth is running.
+- This script evaluates system performance while Honey-in-Depth is running. Run this script several times.
+- The average CPU usage increases less than 5%
+- The memory usage increases less than 1%
 
 ### Stop Monitoring and Cleanup
 
@@ -136,10 +153,3 @@ The **Honey-in-Depth** framework was presented at the **2024 7th International C
 
 ## License
 This project is licensed under the MIT License. Feel free to modify and use it in your security research.
-
-
-
-
-
-
-
