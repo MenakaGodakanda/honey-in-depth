@@ -69,6 +69,7 @@ The script requires root privileges. Run the scripts using sudo.
 ```bash
 sudo python3 hid.py
 ```
+![Screenshot 2025-03-28 151842](https://github.com/user-attachments/assets/cb5bc43a-2e45-485d-a48a-9024a58a35b5)
 
 - This command will deploy the honeytokens and start monitoring them for unauthorized access. 
 - The monitoring will run indefinitely until you stop it with `Ctrl+C`.
@@ -81,8 +82,12 @@ sudo python3 hid.py
 ```bash
 bash test_hid.sh
 ```
+![Screenshot 2025-03-28 152252](https://github.com/user-attachments/assets/9adf8e66-e600-496c-a7ab-5c35f3524cbb)
+![Screenshot 2025-03-28 152258](https://github.com/user-attachments/assets/3603d50a-705c-42cf-96f3-49670a32071f)
 
 - This script simulates unauthorized access to each honeytoken, triggering alerts in the Honey-in-Depth system.
+
+![Screenshot 2025-03-28 152306](https://github.com/user-attachments/assets/ad31b653-65ea-48c9-8639-1d3a34d49392)
 
 ### Calculate Storage
 
@@ -91,6 +96,7 @@ bash test_hid.sh
 ```bash
 bash file_storage.sh
 ```
+![Screenshot 2025-03-28 152415](https://github.com/user-attachments/assets/d4c81110-31cf-46bd-93a7-f5190a22e5e2)
 
 - This script calculates storage capacity occupied by deployed honeytokens.
 
@@ -100,6 +106,7 @@ bash file_storage.sh
 ```bash
 bash cpu_mem_usage.sh
 ```
+![Screenshot 2025-03-28 152604](https://github.com/user-attachments/assets/1ef1a6ac-225e-4298-ae4a-beb69d7e80c7)
 
 - This script evaluates system performance while Honey-in-Depth is running.
 
@@ -107,6 +114,7 @@ bash cpu_mem_usage.sh
 
 - To stop monitoring and remove all deployed honeytokens, simply press `Ctrl+C` in the terminal where the Honey-in-Depth script is running. The system will clean up all honeytokens:
 
+![Screenshot 2025-03-28 152315](https://github.com/user-attachments/assets/65383617-0f85-452a-83f9-7d81d3633a87)
 
 - It will automatically remove all deployed honeytokens, ensuring no interference with system performance.
 
