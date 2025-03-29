@@ -44,7 +44,7 @@ The honeytokens are deployed in the following Defence-in-Depth layers:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/honey-in-depth.git
+git clone https://github.com/MenakaGodakanda/honey-in-depth.git
 cd honey-in-depth
 ```
 
@@ -83,6 +83,7 @@ sudo python3 hid.py
 
 ### Simulate Unauthorized Access
 
+- Open seperate terminal.
 - To test the HID system, simulate unauthorized access by running the test script:
 
 ```bash
@@ -114,6 +115,7 @@ bash file_storage.sh
 ![Screenshot 2025-03-28 152415](https://github.com/user-attachments/assets/d4c81110-31cf-46bd-93a7-f5190a22e5e2)
 
 - This script calculates storage occupied by deployed honeytokens.
+- The total storage of deployed honeytokens are 334 bytes.
 
 ### Calculate CPU and Memory Usage
 - To calculate the CPU and Memory usage when honey-in-depth is running:
